@@ -3,7 +3,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Syna - Salud Mental y Neuropsicología">
-	<main class="font-sans text-[#7D9BB7] bg-[#F5E0B3] overflow-x-hidden">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+	<main class="text-[#7D9BB7] bg-[#F5E0B3] overflow-x-hidden selection:bg-[#9DBEDF] selection:text-white">
 		
 		<section class="relative h-screen flex items-center justify-center overflow-hidden">
 			<div class="absolute inset-0 z-0 bg-fixed bg-cover bg-center" 
@@ -11,9 +15,9 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			
 			<div class="relative z-10 text-center px-6 max-w-4xl">
-				<h1 class="text-6xl md:text-8xl font-bold tracking-tight text-[#7D9BB7] mb-4">SYNA</h1>
-				<p class="text-xl md:text-2xl font-light uppercase tracking-[0.3em] mb-8 text-[#9DBEDF]">Salud mental y Neuropsicología</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<h1 class="text-6xl md:text-8xl font-bold tracking-tight text-[#7D9BB7] mb-4 font-title">SYNA</h1>
+				<p class="text-xl md:text-2xl font-light uppercase tracking-[0.4em] mb-8 text-[#9DBEDF] font-title">Salud mental y Neuropsicología</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center font-body">
 					<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3o8XIbBlmwW0lZ7jN0EJRcn9AwM1ETQP0rxCmhAGEzvowopfwbfqlDpmxSdwYb-EmjsQawQmxX" 
 					   target="_blank" rel="noopener noreferrer"
 					   class="bg-[#F2BA05] hover:bg-[#F6D10F] text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-lg">
@@ -32,87 +36,79 @@ import Layout from '../layouts/Layout.astro';
 			<div class="rounded-3xl overflow-hidden shadow-2xl rotate-2">
 				<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1000&auto=format&fit=crop" alt="Sofía Pérez" class="w-full h-full object-cover">
 			</div>
-			<div>
-				<h2 class="text-4xl font-bold mb-6 text-[#7D9BB7]">Quiénes Somos</h2>
+			<div class="font-body">
+				<h2 class="text-4xl font-bold mb-6 text-[#7D9BB7] font-title">Quiénes Somos</h2>
 				<p class="text-lg leading-relaxed mb-6 text-gray-700">
 					En <strong>Syna</strong>, nos dedicamos al cuidado integral de la salud mental y el bienestar cognitivo. Bajo la dirección de Sofía Pérez, combinamos la neuropsicología con un enfoque humano y profesional.
-				</p>
-				<p class="text-lg leading-relaxed text-gray-700">
-					Nuestra misión es acompañarte en tu proceso de autoconocimiento y sanación, utilizando herramientas basadas en evidencia para potenciar tu calidad de vida.
 				</p>
 			</div>
 		</section>
 
 		<section class="py-24 bg-[#CFE3FE] px-6">
-			<div class="max-w-6xl mx-auto text-center">
-				<h2 class="text-4xl font-bold mb-16 text-[#7D9BB7]">Nuestros Servicios</h2>
+			<div class="max-w-6xl mx-auto text-center font-body">
+				<h2 class="text-4xl font-bold mb-16 text-[#7D9BB7] font-title">Nuestros Servicios</h2>
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 					<div class="bg-white p-8 rounded-3xl shadow-md hover:scale-105 transition-transform">
-						<div class="text-4xl mb-4">🧠</div>
-						<h3 class="text-xl font-bold mb-4">Evaluación Neuropsicológica</h3>
+						<div class="text-4xl mb-4 text-[#F2BA05]">🧠</div>
+						<h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Evaluación Neuropsicológica</h3>
 						<p class="text-gray-600 italic">Análisis detallado de funciones cognitivas como memoria, atención y lenguaje.</p>
 					</div>
-					<div class="bg-white p-8 rounded-3xl shadow-md hover:scale-105 transition-transform border-t-4 border-[#F2BA05]">
-						<div class="text-4xl mb-4">🗣️</div>
-						<h3 class="text-xl font-bold mb-4">Psicoterapia Individual</h3>
+					<div class="bg-white p-8 rounded-3xl shadow-md hover:scale-105 transition-transform border-t-8 border-[#F2BA05]">
+						<div class="text-4xl mb-4 text-[#F2BA05]">🗣️</div>
+						<h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Psicoterapia Individual</h3>
 						<p class="text-gray-600 italic">Acompañamiento profesional para ansiedad, depresión y regulación emocional.</p>
 					</div>
 					<div class="bg-white p-8 rounded-3xl shadow-md hover:scale-105 transition-transform">
-						<div class="text-4xl mb-4">✨</div>
-						<h3 class="text-xl font-bold mb-4">Rehabilitación Cognitiva</h3>
+						<div class="text-4xl mb-4 text-[#F2BA05]">✨</div>
+						<h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Rehabilitación Cognitiva</h3>
 						<p class="text-gray-600 italic">Programas personalizados para fortalecer las capacidades del cerebro.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="py-24 px-6 max-w-4xl mx-auto text-center">
-			<h2 class="text-4xl font-bold mb-12">Lo que dicen nuestros pacientes</h2>
-			<div class="italic text-2xl text-gray-600 leading-snug">
-				"La atención en Syna cambió mi perspectiva sobre la salud mental. Sofía es una profesional excepcional que te hace sentir escuchado desde el primer momento."
-				<span class="block mt-6 font-bold not-italic text-lg text-[#F2BA05]">— Paciente de Neuropsicología</span>
-			</div>
-		</section>
-
 		<section class="py-24 bg-white px-6">
-			<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+			<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 font-body">
 				<div>
-					<h2 class="text-4xl font-bold mb-6 text-[#7D9BB7]">Contacto</h2>
-					<p class="text-lg mb-8">Estamos listos para escucharte. Encuéntranos en nuestra ubicación física o agenda directamente en línea.</p>
+					<h2 class="text-4xl font-bold mb-6 text-[#7D9BB7] font-title">Contacto</h2>
+					<p class="text-lg mb-8">Agenda directamente en línea o visítanos en nuestro consultorio.</p>
 					
 					<div class="space-y-4 mb-8">
-						<p class="flex items-center gap-3">📍 <span class="font-medium">Ubicación principal en la ciudad</span></p>
+						<p class="flex items-center gap-3">📍 <span class="font-medium text-[#7D9BB7]">Ubicación en Monterrey</span></p>
 						<p class="flex items-center gap-3">📸 <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="text-[#9DBEDF] hover:underline">@psicsofiaperez</a></p>
 					</div>
 
-					<a href="https://maps.app.goo.gl/Yg1QwJFhmZ2tdnJVA" 
+					<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3o8XIbBlmwW0lZ7jN0EJRcn9AwM1ETQP0rxCmhAGEzvowopfwbfqlDpmxSdwYb-EmjsQawQmxX" 
 					   target="_blank" rel="noopener noreferrer"
-					   class="inline-block bg-[#7D9BB7] text-white px-8 py-3 rounded-xl hover:bg-[#9DBEDF] transition">
-						Abrir en Google Maps
+					   class="inline-block bg-[#F2BA05] text-white px-8 py-3 rounded-full hover:bg-[#F6D10F] transition font-bold shadow-md">
+						Agendar Cita
 					</a>
 				</div>
 
-				<div class="h-80 md:h-full min-h-[300px] rounded-3xl overflow-hidden shadow-inner border-8 border-[#F5E0B3]">
+				<div class="h-80 md:h-full min-h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#F5E0B3]">
 					<iframe 
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.22591642232!2d-100.2443!3d25.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQwJzQ4LjAiTiAxMDDCsDE0JzM5LjUiVw!5e0!3m2!1ses!2smx!4v1614567890123!5m2!1ses!2smx" 
-						width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719744489451!2d-100.29559959999999!3d25.647425400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1776902840733!5m2!1ses-419!2smx" 
+						width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 					</iframe>
 				</div>
 			</div>
 		</section>
 
-		<footer class="bg-[#7D9BB7] text-white py-12 text-center">
-			<p class="font-bold tracking-widest mb-2">SYNA</p>
-			<p class="text-sm opacity-75">© 2026 Syna Salud Mental y Neuropsicología. Todos los derechos reservados.</p>
+		<footer class="bg-[#7D9BB7] text-white py-12 text-center font-title">
+			<p class="font-bold tracking-[0.5em] mb-2 uppercase">SYNA</p>
+			<p class="text-sm opacity-75 font-body">© 2026 Syna Salud Mental y Neuropsicología.</p>
 		</footer>
 
 	</main>
 </Layout>
 
 <style>
-	/* Para asegurar que el efecto parallax se sienta fluido */
-	section {
-		scroll-snap-align: start;
+	/* Aplicación de fuentes personalizadas */
+	.font-title {
+		font-family: 'Montserrat', sans-serif;
+	}
+	.font-body {
+		font-family: 'Quicksand', sans-serif;
 	}
 	body {
 		scroll-behavior: smooth;
