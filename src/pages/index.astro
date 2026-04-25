@@ -117,6 +117,19 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
+		<a 
+    href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita%20en%20Syna" 
+    class="whatsapp-btn shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="text-white">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.891-11.893 11.891-1.992 0-3.951-.499-5.692-1.447l-6.294 1.666zm8.447-20.635c-2.872 0-5.513 1.156-7.437 3.253l-.567 1.258 1.161 3.159 3.141 1.171 1.261-.564c2.099 1.921 3.255 4.562 3.255 7.437 0 5.841 4.75 10.591 10.591 10.591 5.841 0 10.591-4.75 10.591-10.591s-4.75-10.591-10.591-10.591z"/>
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.454c-1.679 0-3.253-.412-4.633-1.139l-.332-.174-3.441.91.925-3.378-.191-.304c-.792-1.257-1.21-2.707-1.21-4.199 0-4.43 3.603-8.033 8.033-8.033 4.43 0 8.033 3.603 8.033 8.033s-3.603 8.033-8.033 8.033z"/>
+    </svg>
+</a>
+
 		<footer class="bg-[#7D9BB7] text-white py-16 text-center font-title">
 			<img src="/Logos/2.png" alt="Syna Logo" class="h-16 w-auto mx-auto mb-8 opacity-80">
 			<p class="text-[10px] opacity-50 font-body uppercase tracking-[0.3em]">© 2026 Syna Salud Mental y Neuropsicología.</p>
@@ -151,4 +164,37 @@ import Layout from '../layouts/Layout.astro';
 	.font-title { font-family: 'Montserrat', sans-serif; }
 	.font-body { font-family: 'Quicksand', sans-serif; }
 	html { scroll-behavior: smooth; }
+
+	.whatsapp-btn {
+        position: fixed;
+        bottom: 25px; /* Separación del borde inferior */
+        right: 25px;  /* Separación del borde derecho */
+        width: 60px;
+        height: 60px;
+        background-color: #25d366; /* Verde oficial de WhatsApp */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Para que siempre esté por encima de todo */
+        text-decoration: none;
+    }
+
+    /* Opcional: un pequeño efecto de pulso para que llame la atención */
+    .whatsapp-btn::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #25d366;
+        opacity: 0.5;
+        z-index: -1;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        100% { transform: scale(1.6); opacity: 0; }
+    }
 </style>
