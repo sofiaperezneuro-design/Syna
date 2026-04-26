@@ -92,37 +92,43 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </section>
 
-        <section id="contacto" class="py-24 bg-white px-6 reveal">
-            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 font-body">
-                <div class="flex flex-col justify-center">
-                    <h2 class="text-4xl font-bold mb-6 text-[#7D9BB7] font-title text-center md:text-left">Contacto</h2>
-                    <p class="text-lg mb-8 text-center md:text-left text-gray-600 text-balance">Agenda directamente en línea o visítanos en nuestro consultorio en Monterrey.</p>
-                    <div class="space-y-6 mb-10 text-center md:text-left">
-                        <p class="flex items-center gap-4 justify-center md:justify-start">
-                            <span class="bg-[#F5E0B3] p-3 rounded-full">📍</span>
-                            <span class="font-medium text-[#7D9BB7]">Ubicación en Monterrey</span>
-                        </p>
-                        <p class="flex items-center gap-4 justify-center md:justify-start">
-                            <span class="bg-[#F5E0B3] p-3 rounded-full">📸</span>
-                            <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="text-[#9DBEDF] hover:text-[#7D9BB7] transition font-bold">@psicsofiaperez</a>
-                        </p>
+        <section id="contacto" class="py-24 px-6 bg-[#1a1a1a] text-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+            <h2 class="text-4xl font-bold mb-8 font-title text-[#7D9BB7]">Contacto</h2>
+            <p class="text-lg mb-10 text-gray-300 font-light">
+                Estamos ubicados en una zona accesible de Monterrey para brindarte la mejor atención. 
+            </p>
+            
+            <div class="space-y-6 mb-10">
+                <div class="flex items-center gap-4">
+                    <div class="bg-[#7D9BB7]/20 p-3 rounded-full">
+                        <span class="text-xl">📍</span>
                     </div>
-                    <div class="text-center md:text-left">
-                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3o8XIbBlmwW0lZ7jN0EJRcn9AwM1ETQP0rxCmhAGEzvowopfwbfqlDpmxSdwYb-EmjsQawQmxX" 
-                           target="_blank" rel="noopener noreferrer"
-                           class="btn-premium-gold">
-                            Agendar Cita Ahora
-                        </a>
-                    </div>
-                </div>
-                <div class="h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-[#F5E0B3]">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.679124479532!2d-100.31846!3d25.6866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQxJzExLjgiTiAxMDDCsDE5JzA2LjQiVw!5e0!3m2!1ses!2smx!4v1713912345678!5m2!1ses!2smx" 
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+                    <p class="text-gray-300">Monterrey, Nuevo León, México</p>
                 </div>
             </div>
-        </section>
+
+            <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" 
+   target="_blank" 
+   class="btn-premium-gold inline-block text-center shadow-lg transform transition hover:-translate-y-1">
+    ¿Cómo llegar?
+</a>
+        </div>
+
+        <div class="h-[450px] rounded-3xl overflow-hidden shadow-2xl border-2 border-[#7D9BB7]/30">
+            <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+        </div>
+    </div>
+</section>
 
         <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="text-white">
