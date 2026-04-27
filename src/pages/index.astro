@@ -5,171 +5,152 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Syna - Salud Mental y Neuropsicología">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-    <nav id="navbar" class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md px-4 md:px-6 py-3 flex justify-between items-center shadow-sm transition-transform duration-500">
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md px-4 md:px-8 py-4 flex justify-between items-center shadow-sm transition-transform duration-500">
         <div class="flex items-center">
             <a href="#inicio">
-                <img src="/Logos/1.png" alt="Syna Logo" class="h-7 md:h-9 w-auto hover:opacity-80 transition">
+                <img src="/Logos/1.png" alt="Syna Logo" class="h-8 md:h-10 w-auto hover:opacity-80 transition">
             </a>
         </div>
-
-        <div class="flex gap-3 md:gap-8 font-body text-[#7D9BB7] font-semibold text-[9px] md:text-[10px] tracking-[0.1em] md:tracking-[0.2em]">
-            <a href="#inicio" class="hover:text-[#F2BA05] transition">INICIO</a>
-            <a href="#quienes-somos" class="hover:text-[#F2BA05] transition">NOSOTROS</a>
-            <a href="#servicios" class="hover:text-[#F2BA05] transition">SERVICIOS</a>
-            <a href="#contacto" class="hover:text-[#F2BA05] transition border-b border-[#F2BA05] md:border-b-2">CONTACTO</a>
+        <div class="flex gap-4 md:gap-8 font-body text-[#7D9BB7] font-bold text-[11px] md:text-[12px] tracking-[0.15em]">
+            <a href="#inicio" class="hover:text-[#F2BA05] transition uppercase">Inicio</a>
+            <a href="#quienes-somos" class="hover:text-[#F2BA05] transition uppercase">Nosotros</a>
+            <a href="#servicios" class="hover:text-[#F2BA05] transition uppercase">Servicios</a>
+            <a href="#contacto" class="hover:text-[#F2BA05] transition border-b-2 border-[#F2BA05]">Contacto</a>
         </div>
     </nav>
 
     <main class="text-[#7D9BB7] bg-[#F5E0B3] overflow-x-hidden selection:bg-[#9DBEDF] selection:text-white pt-16">
         
         <section id="inicio" class="relative h-[90vh] flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-black/30 z-10"></div> 
-        <img 
-            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2000&auto=format&fit=crop" 
-            class="w-full h-full object-cover object-center"
-            alt="Fondo Syna"
-        />
-    </div>
-    
-    <div class="relative z-20 text-center px-6 max-w-5xl reveal">
-        <img src="/Logos/2.png" alt="Syna" class="w-72 md:w-[450px] mx-auto mb-6 drop-shadow-2xl">
-        
-        <p class="text-lg md:text-2xl font-light uppercase tracking-[0.4em] mb-12 text-white drop-shadow-md font-title whitespace-nowrap">
-            Salud mental y Neuropsicología
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-6 justify-center font-body">
-            <a href="#" target="_blank" class="btn-premium-gold text-lg">
-                Agenda tu cita
-            </a>
-            <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="btn-premium-white text-lg">
-                Instagram
-            </a>
-        </div>
-    </div>
-</section>
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-black/40 z-10"></div> 
+                <img 
+                    id="parallax-bg"
+                    src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2000&auto=format&fit=crop" 
+                    class="w-full h-[120%] object-cover object-center absolute top-0"
+                    alt="Fondo Syna"
+                />
+            </div>
+            
+            <div class="relative z-20 text-center px-6 max-w-5xl reveal">
+                <img src="/Logos/2.png" alt="Syna" class="w-72 md:w-[480px] mx-auto mb-8 drop-shadow-2xl">
+                <p class="text-lg md:text-2xl font-light uppercase tracking-[0.4em] mb-12 text-white drop-shadow-md font-title whitespace-nowrap">
+                    Salud mental y Neuropsicología
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center font-body">
+                    <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="btn-premium-gold text-lg w-full sm:w-auto">Comienza tu proceso ahora</a>
+                    <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="btn-premium-white text-lg w-full sm:w-auto">Conócenos en Instagram</a>
+                </div>
+            </div>
+        </section>
 
-        <section id="quienes-somos" class="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center border-b border-white/20 reveal">
-    <div class="rounded-3xl overflow-hidden shadow-2xl transform hover:rotate-0 transition duration-500 rotate-2">
-        <img 
-            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop" 
-            alt="Sofía Pérez - Syna" 
-            class="w-full h-full object-cover"
-        />
-    </div>
-    
-    <div class="font-body">
-        <h2 class="text-4xl font-bold mb-6 text-[#7D9BB7] font-title">Quiénes Somos</h2>
-        <p class="text-lg leading-relaxed mb-6 text-gray-700 font-light">
-            En <strong>Syna</strong>, nos dedicamos al cuidado integral de la salud mental y el bienestar cognitivo. Bajo la dirección de Sofía Pérez, combinamos la neuropsicología con un enfoque humano y profesional para potenciar tu calidad de vida.
-        </p>
-    </div>
-</section>
+        <section id="quienes-somos" class="py-32 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center border-b border-white/20 reveal">
+            <div class="rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop" alt="Sofía Pérez" class="w-full h-full object-cover"/>
+            </div>
+            <div class="font-body">
+                <h2 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Quiénes Somos</h2>
+                <p class="text-xl leading-relaxed mb-6 text-gray-700 font-light">En <strong>Syna</strong>, combinamos la neuropsicología con un enfoque humano bajo la dirección de la <strong>Psic. Sofía Pérez</strong>.</p>
+            </div>
+        </section>
 
-        <section id="servicios" class="py-24 bg-[#CFE3FE] px-6">
-            <div class="max-w-6xl mx-auto text-center font-body">
-                <h2 class="text-4xl font-bold mb-16 text-[#7D9BB7] font-title reveal">Nuestros Servicios</h2>
+        <section id="servicios" class="py-32 bg-[#CFE3FE] px-6">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-20 text-[#7D9BB7] font-title reveal">Nuestros Servicios</h2>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="service-card reveal">
-                        <div class="text-4xl mb-4 text-[#F2BA05]">🧠</div>
-                        <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Evaluación Neuropsicológica</h3>
-                        <p class="text-gray-600 italic font-light">Análisis detallado de funciones cognitivas como memoria y atención.</p>
+                        <div class="text-5xl mb-6 text-[#F2BA05]">🧠</div>
+                        <h3 class="text-xl font-bold mb-4 font-title">Evaluación Neuropsicológica</h3>
+                        <p class="text-gray-600 italic font-light font-body">Análisis detallado de funciones cognitivas como memoria y atención.</p>
                     </div>
                     <div class="service-card reveal">
-                        <div class="text-4xl mb-4 text-[#F2BA05]">🗣️</div>
-                        <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Psicoterapia Individual</h3>
-                        <p class="text-gray-600 italic font-light">Acompañamiento profesional para tu bienestar emocional.</p>
+                        <div class="text-5xl mb-6 text-[#F2BA05]">🗣️</div>
+                        <h3 class="text-xl font-bold mb-4 font-title">Psicoterapia Individual</h3>
+                        <p class="text-gray-600 italic font-light font-body">Acompañamiento profesional para tu bienestar emocional.</p>
                     </div>
                     <div class="service-card reveal">
-                        <div class="text-4xl mb-4 text-[#F2BA05]">✨</div>
-                        <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Rehabilitación Cognitiva</h3>
-                        <p class="text-gray-600 italic font-light">Programas personalizados para fortalecer tu mente.</p>
+                        <div class="text-5xl mb-6 text-[#F2BA05]">✨</div>
+                        <h3 class="text-xl font-bold mb-4 font-title">Rehabilitación Cognitiva</h3>
+                        <p class="text-gray-600 italic font-light font-body">Programas personalizados para fortalecer tu mente.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contacto" class="py-24 px-6 bg-[#1a1a1a] text-white">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div class="reveal">
-            <h2 class="text-4xl font-bold mb-8 font-title text-[#7D9BB7]">Contacto</h2>
-            <p class="text-lg mb-10 text-gray-300 font-light">
-                Estamos ubicados en una zona accesible de Monterrey para brindarte la mejor atención. 
-            </p>
-            
-            <div class="space-y-6 mb-10">
-                <div class="flex items-center gap-4">
-                    <div class="bg-[#7D9BB7]/20 p-3 rounded-full">
-                        <span class="text-xl">📍</span>
+        <section class="py-32 px-6 bg-white/30 backdrop-blur-sm">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="text-3xl font-bold mb-16 font-title">Lo que dicen nuestros pacientes</h2>
+                <div class="grid md:grid-cols-2 gap-12 text-left font-body">
+                    <div class="p-8 bg-white rounded-2xl shadow-sm border-l-4 border-[#F2BA05]">
+                        <p class="text-gray-600 italic mb-4">"La atención de Sofía es excepcional. Me ayudó a entender mis procesos cognitivos de una forma muy humana."</p>
+                        <p class="font-bold text-[#7D9BB7]">— M.R.</p>
                     </div>
-                    <p class="text-gray-300">Monterrey, Nuevo León, México</p>
+                    <div class="p-8 bg-white rounded-2xl shadow-sm border-l-4 border-[#F2BA05]">
+                        <p class="text-gray-600 italic mb-4">"Excelente profesional. El consultorio tiene una vibra de mucha paz y confianza."</p>
+                        <p class="font-bold text-[#7D9BB7]">— J.L.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" 
-   target="_blank" 
-   class="btn-premium-gold inline-block text-center shadow-lg transform transition hover:-translate-y-1">
-    ¿Cómo llegar?
-</a>
-        </div>
+        <section class="py-32 px-6 max-w-4xl mx-auto reveal font-body">
+            <h2 class="text-3xl font-bold mb-12 text-center font-title">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <details class="group bg-white/50 rounded-2xl p-6 transition-all">
+                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center">
+                        ¿Qué incluye la primera sesión?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Realizamos una entrevista clínica inicial para conocer tu motivo de consulta y establecer un plan de trabajo personalizado.</p>
+                </details>
+                <details class="group bg-white/50 rounded-2xl p-6 transition-all">
+                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center">
+                        ¿Atienden de forma presencial o virtual?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Contamos con consultorio físico en Monterrey y también ofrecemos sesiones en línea para tu comodidad.</p>
+                </details>
+            </div>
+        </section>
 
-        <div class="h-[450px] rounded-3xl overflow-hidden shadow-2xl border-2 border-[#7D9BB7]/30">
-            <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" 
-    width="100%" 
-    height="100%" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-        </div>
-    </div>gi
-</section>
-
-        <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
-  <path d="M16 .396C7.163.396 0 7.56 0 16.396c0 2.89.756 5.6 2.078 7.96L.26 31.604l7.417-1.94A15.944 15.944 0 0016 32c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.07a13.01 13.01 0 01-6.63-1.83l-.475-.282-4.4 1.15 1.17-4.29-.31-.44a13.01 13.01 0 01-2.02-6.98C3.335 9.07 9.07 3.335 16 3.335S28.665 9.07 28.665 16 22.93 29.466 16 29.466zm7.36-9.73c-.4-.2-2.36-1.17-2.72-1.3-.36-.13-.62-.2-.88.2s-1 1.3-1.22 1.56c-.22.26-.44.3-.84.1s-1.7-.62-3.23-1.98c-1.2-1.06-2-2.36-2.24-2.76-.23-.4-.02-.62.18-.82.18-.18.4-.46.6-.7.2-.24.26-.4.4-.66.13-.26.07-.48-.03-.68s-.88-2.12-1.2-2.9c-.32-.77-.64-.66-.88-.67h-.75c-.26 0-.68.1-1.04.48-.36.4-1.36 1.33-1.36 3.23s1.4 3.74 1.6 4c.2.26 2.76 4.22 6.7 5.92.94.4 1.67.64 2.24.82.94.3 1.8.26 2.48.16.76-.12 2.36-.96 2.7-1.9.34-.94.34-1.74.24-1.9-.1-.16-.36-.26-.76-.46z"/>
-</svg>
-        </a>
+        <section id="contacto" class="py-32 px-6 bg-[#0f0f0f] text-white">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-4xl font-bold mb-6 font-title text-[#7D9BB7]">Contacto</h2>
+                    <p class="text-lg text-gray-400 mb-10 font-light leading-relaxed">Agenda tu sesión y comienza a priorizar tu bienestar.</p>
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-center gap-4">
+                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></div>
+                            <p class="text-gray-300 font-light">Monterrey, Nuevo León, México</p>
+                        </div>
+                        <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="contact-link">
+                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 4.8A5.2 5.2 0 1112 17.2 5.2 5.2 0 0112 6.8zm0 8.6A3.4 3.4 0 1012 8.6a3.4 3.4 0 000 6.8zm5.4-9.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></div>
+                            <span>@psicsofiaperez</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-4 sm:max-w-xs">
+                        <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="btn-premium-gold text-center">Agendar sesión</a>
+                        <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" target="_blank" class="btn-premium-gold outline text-center">¿Cómo llegar?</a>
+                    </div>
+                </div>
+                <div class="map-container h-[450px]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
 
         <footer class="bg-[#7D9BB7] text-white py-16 text-center font-title">
             <img src="/Logos/2.png" alt="Syna Logo" class="h-16 w-auto mx-auto mb-8 opacity-80">
-            <p class="text-[10px] opacity-50 font-body uppercase tracking-[0.3em]">© 2026 Syna Salud Mental y Neuropsicología.</p>
+            <p class="text-[10px] opacity-60 font-body uppercase tracking-[0.3em]">© 2026 Syna Salud Mental y Neuropsicología.</p>
         </footer>
     </main>
+
+    <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="whatsapp-btn" target="_blank">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="white"><path d="M16 .396C7.163.396 0 7.56 0 16.396c0 2.89.756 5.6 2.078 7.96L.26 31.604l7.417-1.94A15.944 15.944 0 0016 32c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.07a13.01 13.01 0 01-6.63-1.83l-.475-.282-4.4 1.15 1.17-4.29-.31-.44a13.01 13.01 0 01-2.02-6.98C3.335 9.07 9.07 3.335 16 3.335S28.665 9.07 28.665 16 22.93 29.466 16 29.466zm7.36-9.73c-.4-.2-2.36-1.17-2.72-1.3-.36-.13-.62-.2-.88.2s-1 1.3-1.22 1.56c-.22.26-.44.3-.84.1s-1.7-.62-3.23-1.98c-1.2-1.06-2-2.36-2.24-2.76-.23-.4-.02-.62.18-.82.18-.18.4-.46.6-.7.2-.24.26-.4.4-.66.13-.26.07-.48-.03-.68s-.88-2.12-1.2-2.9c-.32-.77-.64-.66-.88-.67h-.75c-.26 0-.68.1-1.04.48-.36.4-1.36 1.33-1.36 3.23s1.4 3.74 1.6 4c.2.26 2.76 4.22 6.7 5.92.94.4 1.67.64 2.24.82.94.3 1.8.26 2.48.16.76-.12 2.36-.96 2.7-1.9.34-.94.34-1.74.24-1.9-.1-.16-.36-.26-.76-.46z"/></svg>
+    </a>
 </Layout>
-
-<script is:inline>
-    // Un solo bloque de script con todo optimizado
-    let lastScrollY = window.scrollY;
-    const navbar = document.getElementById('navbar');
-
-    window.addEventListener('scroll', () => {
-        // 1. Manejo del Navbar
-        if (window.scrollY > 100) {
-            navbar.style.transform = window.scrollY > lastScrollY ? 'translateY(-100%)' : 'translateY(0)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-        lastScrollY = window.scrollY;
-
-        // 2. Manejo de Apariciones (Reveal)
-        document.querySelectorAll('.reveal').forEach(el => {
-            const windowHeight = window.innerHeight;
-            const elementTop = el.getBoundingClientRect().top;
-            if (elementTop < windowHeight - 100) {
-                el.classList.add('active');
-            }
-        });
-    });
-
-    // Disparar al cargar
-    window.dispatchEvent(new Event('scroll'));
-</script>
 
 <style is:global>
     .font-title { font-family: 'Montserrat', sans-serif; }
@@ -178,89 +159,78 @@ import Layout from '../layouts/Layout.astro';
 
     .reveal {
         opacity: 0;
-        transform: translateY(50px);
-        transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        visibility: hidden;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-    .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-        visibility: visible;
-    }
+    .reveal.active { opacity: 1; transform: translateY(0); }
 
     .btn-premium-gold {
         background-color: #F2BA05;
         color: white;
         font-weight: 700;
-        padding: 1rem 2.5rem;
+        padding: 1.1rem 2.2rem;
         border-radius: 9999px;
-        transition: all 0.4s ease;
+        transition: 0.4s;
         display: inline-block;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        font-size: 0.9rem;
     }
-    .btn-premium-gold:hover {
-        transform: scale(1.05) translateY(-3px);
-        background-color: #F6D10F;
-        box-shadow: 0 20px 25px -5px rgba(242, 186, 5, 0.3);
-    }
+    .btn-premium-gold:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(242, 186, 5, 0.4); }
 
     .btn-premium-white {
-        background-color: rgba(255, 255, 255, 0.5);
-        color: #7D9BB7;
-        font-weight: 700;
-        padding: 1rem 2.5rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-weight: 600;
+        padding: 1.1rem 2.2rem;
         border-radius: 9999px;
-        transition: all 0.4s ease;
-        backdrop-filter: blur(8px);
-        display: inline-block;
+        transition: 0.4s;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    .btn-premium-white:hover {
-        background-color: rgba(255, 255, 255, 0.9);
-        transform: translateY(-3px);
-    }
+    .btn-premium-white:hover { background: white; color: #7D9BB7; }
 
-    .service-card {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 2rem;
-    border-radius: 1.5rem;
-    transition: all 0.5s ease;
-    border: 1px solid rgba(255,255,255,0.6);
-    backdrop-filter: blur(10px);
-}
-    .service-card:hover {
-        transform: translateY(-10px);
-        background-color: white;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-    }
-    .service-card.featured {
-        background-color: white;
-        border-top: 8px solid #F2BA05;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    }
+    .btn-premium-gold.outline { background: transparent; border: 2px solid #F2BA05; color: #F2BA05; }
 
-    .whatsapp-btn {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        width: 60px;
-        height: 60px;
-        background-color: #25D366;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        transition: all 0.3s;
-    }
+    .icon-circle { width: 48px; height: 48px; background: rgba(125, 155, 183, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #F2BA05; }
+    .contact-link { display: flex; align-items: center; gap: 15px; color: #9ca3af; transition: 0.3s; }
+    .contact-link:hover { color: #F2BA05; }
+
+    .map-container { border-radius: 32px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+    .service-card { background: white; padding: 3rem 2rem; border-radius: 2rem; transition: 0.4s; }
+    .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+
+    .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; background-color: #25D366; border-radius: 50%; display: flex; justify-content: center; align-items: center; z-index: 1000; transition: 0.3s; }
     .whatsapp-btn:hover { transform: scale(1.1); }
-    .whatsapp-btn::before {
-        content: ""; position: absolute; width: 100%; height: 100%;
-        border-radius: 50%; background-color: #25d366; opacity: 0.5;
-        z-index: -1; animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-        0% { transform: scale(1); opacity: 0.5; }
-        100% { transform: scale(1.6); opacity: 0; }
-    }
 </style>
+
+<script is:inline>
+    // PARALLAX SCRIPT
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const parallax = document.getElementById('parallax-bg');
+        if (parallax) {
+            // Ajustamos la velocidad (0.5 es la mitad de la velocidad del scroll)
+            parallax.style.transform = `translateY(${scrolled * 0.4}px)`;
+        }
+    });
+
+    // REVEAL ANIMATION
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('active');
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // NAVBAR AUTO-HIDE
+    let lastScroll = window.scrollY;
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > lastScroll && window.scrollY > 100) {
+            nav.style.transform = 'translateY(-100%)';
+        } else {
+            nav.style.transform = 'translateY(0)';
+        }
+        lastScroll = window.scrollY;
+    });
+</script>
