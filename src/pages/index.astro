@@ -23,28 +23,25 @@ import Layout from '../layouts/Layout.astro';
 
     <main class="text-[#7D9BB7] bg-[#F5E0B3] overflow-x-hidden selection:bg-[#9DBEDF] selection:text-white pt-16">
         
-        <section id="inicio" class="relative h-[90vh] flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <div class="absolute inset-0 bg-black/40 z-10"></div> 
-                <img 
-                    id="parallax-bg"
-                    src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2000&auto=format&fit=crop" 
-                    class="w-full h-[120%] object-cover object-center absolute top-0"
-                    alt="Fondo Syna"
-                />
-            </div>
-            
-            <div class="relative z-20 text-center px-6 max-w-5xl reveal">
-                <img src="/Logos/2.png" alt="Syna" class="w-72 md:w-[480px] mx-auto mb-8 drop-shadow-2xl">
-                <p class="text-lg md:text-2xl font-light uppercase tracking-[0.4em] mb-12 text-white drop-shadow-md font-title whitespace-nowrap">
-                    Salud mental y Neuropsicología
-                </p>
-                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center font-body">
-                    <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="btn-premium-gold text-lg w-full sm:w-auto">Comienza tu proceso ahora</a>
-                    <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="btn-premium-white text-lg w-full sm:w-auto">Conócenos en Instagram</a>
-                </div>
-            </div>
-        </section>
+        <section id="inicio" class="hero-parallax relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-black/50 z-10"></div> 
+    <div class="relative z-20 text-center px-4 w-full max-w-5xl reveal">
+        <img src="/Logos/2.png" alt="Syna" class="w-64 md:w-[450px] mx-auto mb-6 drop-shadow-2xl">
+        
+        <h1 class="text-sm md:text-2xl font-light uppercase tracking-[0.2em] md:tracking-[0.4em] mb-10 text-white font-title leading-relaxed">
+            Salud mental y <br class="block md:hidden" /> neuropsicología
+        </h1>
+
+        <div class="flex flex-wrap gap-4 justify-center items-center font-body">
+            <a href="https://wa.me/5218132438309?text=Hola!" class="btn-premium-gold">
+                Comienza ahora
+            </a>
+            <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="btn-premium-white">
+                Instagram
+            </a>
+        </div>
+    </div>
+</section>
 
         <section id="quienes-somos" class="py-32 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center border-b border-white/20 reveal">
             <div class="rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
@@ -201,6 +198,41 @@ import Layout from '../layouts/Layout.astro';
 
     .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; background-color: #25D366; border-radius: 50%; display: flex; justify-content: center; align-items: center; z-index: 1000; transition: 0.3s; }
     .whatsapp-btn:hover { transform: scale(1.1); }
+
+	.btn-premium-gold, .btn-premium-white {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 1.8rem; /* Padding fijo para mantener la forma */
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        white-space: nowrap; /* Evita que el texto del botón se parta */
+        width: auto; /* IMPORTANTE: Para que no sea pantalla completa */
+        min-width: 160px; /* Un ancho mínimo para que se vean simétricos */
+        transition: 0.3s;
+    }
+
+    .btn-premium-gold {
+        background: #F2BA05;
+        color: white;
+        border: none;
+    }
+
+    .btn-premium-white {
+        background: rgba(255,255,255,0.15);
+        color: white;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    /* Ajuste para el texto del Hero en pantallas muy pequeñas */
+    @media (max-width: 400px) {
+        .font-title {
+            letter-spacing: 0.1em !important;
+            font-size: 0.75rem !important;
+        }
+    }
 </style>
 
 <script is:inline>
