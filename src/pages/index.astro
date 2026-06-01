@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
             <a href="#inicio" class="hover:text-[#F2BA05] transition uppercase">Inicio</a>
             <a href="#quienes-somos" class="hover:text-[#F2BA05] transition uppercase">Nosotros</a>
             <a href="#servicios" class="hover:text-[#F2BA05] transition uppercase">Servicios</a>
-            <a href="#contacto" class="hover:text-[#F2BA05] transition border-b-2 border-[#F2BA05]">Contacto</a>
+            <a href="#contacto" class="hover:text-[#F2BA05] transition uppercase">Contacto</a>
         </div>
     </nav>
 
@@ -112,31 +112,56 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </section>
 
-        <section id="contacto" class="py-32 px-6 bg-[#0f0f0f] text-white">
-            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                <div class="reveal">
-                    <h2 class="text-4xl font-bold mb-6 font-title text-[#7D9BB7]">Contacto</h2>
-                    <p class="text-lg text-gray-400 mb-10 font-light leading-relaxed">Agenda tu sesión y comienza a priorizar tu bienestar.</p>
-                    <div class="space-y-8 mb-12">
-                        <div class="flex items-center gap-4">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></div>
-                            <p class="text-gray-300 font-light">Monterrey, Nuevo León, México</p>
-                        </div>
-                        <a href="https://www.instagram.com/psicsofiaperez/" target="_blank" class="contact-link">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 4.8A5.2 5.2 0 1112 17.2 5.2 5.2 0 0112 6.8zm0 8.6A3.4 3.4 0 1012 8.6a3.4 3.4 0 000 6.8zm5.4-9.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></div>
-                            <span>@psicsofiaperez</span>
-                        </a>
-                    </div>
-                    <div class="flex flex-col gap-4 sm:max-w-xs">
-                        <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="btn-premium-gold text-center btn-hero-hover">Agendar sesión</a>
-                        <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" target="_blank" class="btn-premium-gold outline text-center btn-hero-hover">¿Cómo llegar?</a>
-                    </div>
+        <section id="contacto" class="py-32 px-4 md:px-6 bg-[#0f0f0f] text-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+        
+        <!-- COLUMNA 1: DATOS DE CONTACTO -->
+        <div class="reveal font-body lg:pr-4">
+            <h2 class="text-4xl font-bold mb-6 font-title text-[#7D9BB7]">Contacto</h2>
+            <p class="text-lg text-gray-400 mb-10 font-light leading-relaxed">Agenda tu sesión y comienza a priorizar tu bienestar.</p>
+            <div class="space-y-8 mb-12">
+                <div class="flex items-center gap-4">
+                    <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></div>
+                    <p class="text-gray-300 font-light">Monterrey, Nuevo León, México</p>
                 </div>
-                <div class="map-container h-[450px]">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
-                </div>
+                <a href="https://www.instagram.com/syna.saludmental/" target="_blank" class="flex items-center gap-4 text-gray-300 hover:text-[#F2BA05] transition-colors font-light">
+                    <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 4.8A5.2 5.2 0 1112 17.2 5.2 5.2 0 0112 6.8zm0 8.6A3.4 3.4 0 1012 8.6a3.4 3.4 0 000 6.8zm5.4-9.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></div>
+                    <span>@syna.saludmental</span>
+                </a>
             </div>
-        </section>
+            <div class="flex flex-col gap-4 w-full">
+                <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="btn-premium-gold text-center btn-hero-hover w-full">Agendar por WhatsApp</a>
+                <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" target="_blank" class="btn-premium-gold outline text-center btn-hero-hover w-full">¿Cómo llegar?</a>
+            </div>
+        </div>
+
+        <!-- COLUMNA 2: EL CALENDARIO DE GOOGLE (REEMPLAZÓ AL FORMULARIO) -->
+        <div class="reveal bg-white/5 p-6 rounded-3xl border border-white/10 font-body backdrop-blur-sm w-full lg:col-span-1">
+            <h3 class="text-xl font-bold mb-2 font-title text-white">Reserva tu sesión</h3>
+            <p class="text-sm text-gray-400 mb-6 font-light">Selecciona el día y la hora de tu preferencia directamente en la agenda en vivo.</p>
+            
+            <div class="calendar-container relative w-full overflow-hidden rounded-2xl bg-white h-[500px]">
+                <!-- Recuerda poner aquí tu link definitivo de Google con el ?gv=true al final -->
+                <iframe 
+                    src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3o8XIbBlmwW0lZ7jN0EJRcn9AwM1ETQP0rxCmhAGEzvowopfwbfqlDpmxSdwYb-EmjsQawQmxX?gv=true" 
+                    style="border: 0" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- COLUMNA 3: EL MAPA -->
+        <div class="reveal map-container h-[450px] lg:h-full min-h-[500px] w-full">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+        </div>
+
+    </div>
+</section>
+<!-- SECCIÓN DE PRUEBA: AGENDAR CITA (GOOGLE CALENDAR) -->
+        
 
         <footer class="bg-[#7D9BB7] text-white py-16 text-center font-title">
             <img src="/Logos/2.png" alt="Syna Logo" class="h-16 w-auto mx-auto mb-8 opacity-80">
@@ -182,7 +207,6 @@ import Layout from '../layouts/Layout.astro';
         border-radius: 9999px;
         transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         display: inline-block;
-        text-transform: uppercase;
         font-size: 0.9rem;
     }
 
@@ -231,6 +255,40 @@ import Layout from '../layouts/Layout.astro';
             font-size: 0.75rem !important;
         }
     }
+
+    /* ESTILOS DEL NUEVO FORMULARIO */
+    .form-input {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 14px;
+        padding: 0.85rem 1.2rem;
+        color: white;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+    .form-input:focus {
+        border-color: #F2BA05;
+        background-color: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 0 0 3px rgba(242, 186, 5, 0.15);
+    }
+    .form-input::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ESTILOS DE LA SECCIÓN DE PRUEBA DEL CALENDARIO */
+    .calendar-container iframe {
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+    }
+
+    .calendar-container iframe {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
 </style>
 
 <script is:inline>
@@ -251,4 +309,6 @@ import Layout from '../layouts/Layout.astro';
         }
         lastScroll = window.scrollY;
     });
+
+
 </script>
