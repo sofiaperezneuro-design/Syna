@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 // Importamos la imagen directamente desde la carpeta de 
 import fotoSofia from '../assets/fotopsic.jpg';
+import inicio from '../assets/inicio.jpg';
 import { Image } from 'astro:assets';
 ---
 
@@ -26,8 +27,22 @@ import { Image } from 'astro:assets';
 
     <main class="text-[#7D9BB7] bg-[#F5E0B3] overflow-x-hidden selection:bg-[#9DBEDF] selection:text-white pt-16">
         
-        <section id="inicio" class="hero-parallax relative h-[90vh] flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 bg-black/40 z-10"></div> 
+            <section id="inicio" class="hero-parallax relative h-[90vh] flex items-center justify-center overflow-hidden">
+            <!-- IMAGEN DE FONDO OPTIMIZADA CON BLUR -->
+            <div class="absolute inset-0 z-0">
+                <Image 
+                    src={inicio} 
+                    alt="Fondo Syna" 
+                    class="w-full h-full object-cover blur-[4px] scale-105"
+                    quality="high"
+                    priority
+                />
+            </div>
+
+            <!-- OVERLAY OSCURO PARA DAR CONTRASTE -->
+            <div class="absolute inset-0 bg-black/45 z-10"></div> 
+            
+            <!-- CONTENIDO CENTRAL -->
             <div class="relative z-20 text-center px-4 w-full max-w-5xl reveal">
                 <img src="/Logos/2.png" alt="Syna" class="w-64 md:w-[450px] mx-auto mb-6 drop-shadow-2xl">
                 
@@ -60,14 +75,14 @@ import { Image } from 'astro:assets';
                 <div>
                     <h2 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Quiénes Somos</h2>
                     <p class="text-xl leading-relaxed text-slate-700 font-medium">
-                        Somos un Centro enfocado en la evaluación e intervención neuropsicológica y emocional, seguimiento académico junto a Colegios, Terapia Emocional Infantil, así como acompañamiento cercano con las Familias.
+                        Somos un Centro enfocado en la intervención emocional y neuropsicológica a niños, adolescentes y adultos, ubicados en Monterrey, N.L.
                     </p>
                 </div>
                 
                 <div class="mt-12">
                     <h3 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Lo que hacemos</h3>
                     <p class="text-xl leading-relaxed text-slate-700 font-medium">
-                        Aplicamos pruebas de Evaluación así como terapias de intervención con enfoque Neuropsicológico a todas las edades, y Psicoterapia Emocional infantil y adolescente.
+                        Desarrollamos programas de intervención personalizados que incluyen Evaluaciones neuropsicológicas, seguimiento académico junto a Colegios, Terapia Emocional Infantil y para Adultos, así como acompañamiento cercano con las Familias.
                     </p>
                 </div>
             </div>
@@ -104,7 +119,7 @@ import { Image } from 'astro:assets';
                         <div>
                             <div class="text-5xl mb-6 text-[#F2BA05] transform group-hover:scale-110 group-hover:rotate-6 transition duration-300 inline-block">✨</div>
                             <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Acompañamiento a familias</h3>
-                            <p class="text-gray-600 italic font-light font-body leading-relaxed mb-6">Sesiones de retroalimentación y recommendations a familias y colegios.</p>
+                            <p class="text-gray-600 italic font-light font-body leading-relaxed mb-6">Sesiones de retroalimentación y recomendaciones a familias y colegios.</p>
                         </div>
                         <a href="#contacto" class="text-[#F2BA05] font-bold text-xs tracking-wider uppercase font-title flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 mt-4">
                             Más información →
