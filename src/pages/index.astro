@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 // Importamos la imagen directamente desde la carpeta de 
 import fotoSofia from '../assets/fotopsic.jpg';
-import inicio from '../assets/inicio.jpg';
+import inicio from '../assets/inicio.webp';
 import { Image } from 'astro:assets';
 ---
 
@@ -136,14 +136,14 @@ import { Image } from 'astro:assets';
                 
                 <div class="grid md:grid-cols-2 gap-8 text-left font-body items-start">
                     
-                    <div class="p-8 bg-[#1e1e1e] rounded-3xl border border-white/5 shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
+                    <div class="p-8 bg-white/[0.04] backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
                         <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
                             "Nuestro proceso fue muy satisfactorio y completo, recibimos la atención que buscábamos para nuestro hijo. Mejoraron sus habilidades de comunicación y su concentración. Agradecemos el empeño que la psicóloga Sofía pone en cada una de las terapias, así como la calidez en el trato para con sus pacientes y familia, los reportes de diagnóstico fueron muy completos, enfocándose en las áreas que se necesitan trabajar con nuestro hijo."
                         </p>
                         <p class="font-bold text-[#7D9BB7] tracking-wider">— B. R.</p>
                     </div>
                     
-                    <div class="p-8 bg-[#1e1e1e] rounded-3xl border border-white/5 shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
+                    <div class="p-8 bg-white/[0.04] backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
                         <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
                             "Muchas gracias por las citas que me ha dado. De un tiempo para acá me he dado cuenta de muchas cosas y he hecho cambios en mi forma de pensar and actuar y es gracias a usted, muchas gracias por la vocación y empeño que le pone a su trabajo."
                         </p>
@@ -156,30 +156,34 @@ import { Image } from 'astro:assets';
 
         <section class="py-32 px-6 max-w-4xl mx-auto reveal font-body">
             <h2 class="text-3xl font-bold mb-12 text-center font-title text-[#7D9BB7]">Preguntas Frecuentes</h2>
-            <div class="space-y-4">
+            <div class="space-y-5">
                 
-                <details class="group bg-[#1e1e1e] border border-white/5 rounded-2xl p-6 transition-all transform hover:-translate-y-1 duration-300">
-                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none">
+                <!-- PREGUNTA 1 -->
+                <details class="group bg-white/[0.08] backdrop-blur-md border border-white/20 open:border-l-[#F2BA05] open:border-l-4 rounded-2xl p-6 shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
+                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none text-base md:text-lg group-open:text-[#F2BA05] transition-colors">
                         ¿Qué incluye la primera sesión?
                         <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
                     </summary>
-                    <p class="mt-4 text-gray-300 font-light leading-relaxed">
+                    <p class="mt-4 text-white font-medium text-sm md:text-base leading-relaxed border-t border-white/10 pt-4 opacity-95">
                         Realizamos una entrevista clínica inicial para conocer su motivo de consulta, se establece la Batería de pruebas para aplicar y un plan de trabajo personalizado.
                     </p>
                 </details>
                 
-                <details class="group bg-[#1e1e1e] border border-white/5 rounded-2xl p-6 transition-all transform hover:-translate-y-1 duration-300">
-                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none">
+                <!-- PREGUNTA 2 -->
+                <details class="group bg-white/[0.08] backdrop-blur-md border border-white/20 open:border-l-[#F2BA05] open:border-l-4 rounded-2xl p-6 shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
+                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none text-base md:text-lg group-open:text-[#F2BA05] transition-colors">
                         ¿Atienden de forma presencial o virtual?
                         <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
                     </summary>
-                    <p class="mt-4 text-gray-300 font-light leading-relaxed">
+                    <p class="mt-4 text-white font-medium text-sm md:text-base leading-relaxed border-t border-white/10 pt-4 opacity-95">
                         Contamos con consultorio físico en Monterrey y también ofrecemos sesiones en línea, según lo requiera el caso.
                     </p>
                 </details>
                 
             </div>
         </section>
+
+        
 
         <section id="contacto" class="py-32 px-4 md:px-6 bg-[#0f0f0f] text-white">
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
