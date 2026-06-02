@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 // Importamos la imagen directamente desde la carpeta de 
-
 import fotoSofia from '../assets/fotopsic.jpg';
 import { Image } from 'astro:assets';
 ---
@@ -37,10 +36,10 @@ import { Image } from 'astro:assets';
                 </h1>
 
                 <div class="flex flex-wrap gap-4 justify-center items-center font-body">
-                    <a href="https://wa.me/5218132438309?text=Hola!" class="btn-premium-gold btn-hero-hover">
+                    <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" class="btn-premium-gold btn-hero-hover shadow-lg">
                         Comienza ahora
                     </a>
-                    <a href="https://www.instagram.com/syna.saludmental/" target="_blank" class="btn-premium-white btn-hero-hover">
+                    <a href="https://www.instagram.com/syna.saludmental/" target="_blank" rel="noopener noreferrer" class="btn-premium-white btn-hero-hover">
                         Instagram
                     </a>
                 </div>
@@ -48,175 +47,177 @@ import { Image } from 'astro:assets';
         </section>
 
         <section id="quienes-somos" class="py-32 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center border-b border-white/20 reveal">
-    <div class="rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500 bg-[#1e1e1e] w-full">
-        <Image 
-            src={fotoSofia} 
-            alt="Psic. Sofía Pérez" 
-            class="w-full h-[440px] object-cover object-[center_22%] block"
-            quality="high"
-        />
-    </div>
-    
-    <div class="font-body">
-        <div>
-            <h2 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Quiénes Somos</h2>
-            <p class="text-xl leading-relaxed text-slate-700 font-medium">
-                Somos un Centro enfocado en la evaluación e intervención neuropsicológica y emocional, seguimiento académico junto a Colegios, Terapia Emocional Infantil, así como acompañamiento cercano con las Familias.
-            </p>
-        </div>
-        
-        <div class="mt-12">
-            <h3 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Lo que hacemos</h3>
-            <p class="text-xl leading-relaxed text-slate-700 font-medium">
-                Aplicamos pruebas de Evaluación así como terapias de intervención con enfoque Neuropsicológico a todas las edades, y Psicoterapia Emocional infantil y adolescente.
-            </p>
-        </div>
-    </div>
-</section>
+            <div class="rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500 bg-[#1e1e1e] w-full group">
+                <Image 
+                    src={fotoSofia} 
+                    alt="Psic. Sofía Pérez" 
+                    class="w-full h-[440px] object-cover object-[center_22%] block group-hover:scale-105 transition duration-700"
+                    quality="high"
+                />
+            </div>
+            
+            <div class="font-body">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Quiénes Somos</h2>
+                    <p class="text-xl leading-relaxed text-slate-700 font-medium">
+                        Somos un Centro enfocado en la evaluación e intervención neuropsicológica y emocional, seguimiento académico junto a Colegios, Terapia Emocional Infantil, así como acompañamiento cercano con las Familias.
+                    </p>
+                </div>
+                
+                <div class="mt-12">
+                    <h3 class="text-4xl font-bold mb-8 text-[#7D9BB7] font-title">Lo que hacemos</h3>
+                    <p class="text-xl leading-relaxed text-slate-700 font-medium">
+                        Aplicamos pruebas de Evaluación así como terapias de intervención con enfoque Neuropsicológico a todas las edades, y Psicoterapia Emocional infantil y adolescente.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <section id="servicios" class="py-32 bg-[#CFE3FE] px-6">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-20 text-[#7D9BB7] font-title reveal">Nuestros Servicios</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- TARJETA 1: EVALUACIÓN NEUROPSICOLÓGICA -->
-            <div class="service-card reveal">
-                <div class="text-5xl mb-6 text-[#F2BA05]">🧠</div>
-                <h3 class="text-xl font-bold mb-4 font-title">Evaluación Neuropsicológica</h3>
-                <p class="text-gray-600 italic font-light font-body">Análisis detallado de funciones cognitivas tales como atención, memoria y funciones ejecutivas.</p>
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-20 text-[#7D9BB7] font-title reveal">Nuestros Servicios</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="service-card reveal group bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-400 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="text-5xl mb-6 text-[#F2BA05] transform group-hover:scale-110 group-hover:rotate-6 transition duration-300 inline-block">🧠</div>
+                            <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Evaluación Neuropsicológica</h3>
+                            <p class="text-gray-600 italic font-light font-body leading-relaxed mb-6">Análisis detallado de funciones cognitivas tales como atención, memoria y funciones ejecutivas.</p>
+                        </div>
+                        <a href="#contacto" class="text-[#F2BA05] font-bold text-xs tracking-wider uppercase font-title flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 mt-4">
+                            Agendar evaluación →
+                        </a>
+                    </div>
+                    
+                    <div class="service-card reveal group bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-400 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="text-5xl mb-6 text-[#F2BA05] transform group-hover:scale-110 group-hover:rotate-6 transition duration-300 inline-block">🗣️</div>
+                            <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Psicoterapia Emocional</h3>
+                            <p class="text-gray-600 italic font-light font-body leading-relaxed mb-6">Terapia psicoanalítica infantil a través del juego.</p>
+                        </div>
+                        <a href="#contacto" class="text-[#F2BA05] font-bold text-xs tracking-wider uppercase font-title flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 mt-4">
+                            Consultar disponibilidad →
+                        </a>
+                    </div>
+                    
+                    <div class="service-card reveal group bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-400 flex flex-col justify-between text-left">
+                        <div>
+                            <div class="text-5xl mb-6 text-[#F2BA05] transform group-hover:scale-110 group-hover:rotate-6 transition duration-300 inline-block">✨</div>
+                            <h3 class="text-xl font-bold mb-4 font-title text-[#7D9BB7]">Acompañamiento a familias</h3>
+                            <p class="text-gray-600 italic font-light font-body leading-relaxed mb-6">Sesiones de retroalimentación y recommendations a familias y colegios.</p>
+                        </div>
+                        <a href="#contacto" class="text-[#F2BA05] font-bold text-xs tracking-wider uppercase font-title flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 mt-4">
+                            Más información →
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
-            
-            <!-- TARJETA 2: PSICOTERAPIA EMOCIONAL -->
-            <div class="service-card reveal">
-                <div class="text-5xl mb-6 text-[#F2BA05]">🗣️</div>
-                <h3 class="text-xl font-bold mb-4 font-title">Psicoterapia Emocional</h3>
-                <p class="text-gray-600 italic font-light font-body">Terapia psicoanalítica infantil a través del juego.</p>
-            </div>
-            
-            <!-- TARJETA 3: ACOMPAÑAMIENTO A FAMILIAS -->
-            <div class="service-card reveal">
-                <div class="text-5xl mb-6 text-[#F2BA05]">✨</div>
-                <h3 class="text-xl font-bold mb-4 font-title">Acompañamiento a familias</h3>
-                <p class="text-gray-600 italic font-light font-body">Sesiones de retroalimentación y recomendaciones a familias y colegios.</p>
-            </div>
-            
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="py-32 px-6 bg-[#1a1a1a]/30 backdrop-blur-sm">
-    <div class="max-w-5xl mx-auto text-center reveal">
-        <h2 class="text-3xl font-bold mb-16 font-title text-[#7D9BB7]">Lo que dicen nuestros pacientes</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8 text-left font-body items-start">
-            
-            <!-- TESTIMONIO 1: B. R. -->
-            <div class="p-8 bg-[#1e1e1e] rounded-3xl border border-white/5 shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
-                <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
-                    "Nuestro proceso fue muy satisfactorio y completo, recibimos la atención que buscábamos para nuestro hijo. Mejoraron sus habilidades de comunicación y su concentración. Agradecemos el empeño que la psicóloga Sofía pone en cada una de las terapias, así como la calidez en el trato para con sus pacientes y familia, los reportes de diagnóstico fueron muy completos, enfocándose en las áreas que se necesitan trabajar con nuestro hijo."
-                </p>
-                <p class="font-bold text-[#7D9BB7] tracking-wider">— B. R.</p>
+            <div class="max-w-5xl mx-auto text-center reveal">
+                <h2 class="text-3xl font-bold mb-16 font-title text-[#7D9BB7]">Lo que dicen nuestros pacientes</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 text-left font-body items-start">
+                    
+                    <div class="p-8 bg-[#1e1e1e] rounded-3xl border border-white/5 shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
+                        <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
+                            "Nuestro proceso fue muy satisfactorio y completo, recibimos la atención que buscábamos para nuestro hijo. Mejoraron sus habilidades de comunicación y su concentración. Agradecemos el empeño que la psicóloga Sofía pone en cada una de las terapias, así como la calidez en el trato para con sus pacientes y familia, los reportes de diagnóstico fueron muy completos, enfocándose en las áreas que se necesitan trabajar con nuestro hijo."
+                        </p>
+                        <p class="font-bold text-[#7D9BB7] tracking-wider">— B. R.</p>
+                    </div>
+                    
+                    <div class="p-8 bg-[#1e1e1e] rounded-3xl border border-white/5 shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
+                        <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
+                            "Muchas gracias por las citas que me ha dado. De un tiempo para acá me he dado cuenta de muchas cosas y he hecho cambios en mi forma de pensar and actuar y es gracias a usted, muchas gracias por la vocación y empeño que le pone a su trabajo."
+                        </p>
+                        <p class="font-bold text-[#7D9BB7] tracking-wider">— J. O.</p>
+                    </div>
+                    
+                </div>
             </div>
-            
-            <!-- TESTIMONIO 2: J. O. -->
-            <div class="p-8 bg-[#1e1e1e] rounded-3xl border border-white/5 shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
-                <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
-                    "Muchas gracias por las citas que me ha dado. De un tiempo para acá me he dado cuenta de muchas cosas y he hecho cambios en mi forma de pensar and actuar y es gracias a usted, muchas gracias por la vocación y empeño que le pone a su trabajo."
-                </p>
-                <p class="font-bold text-[#7D9BB7] tracking-wider">— J. O.</p>
-            </div>
-            
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="py-32 px-6 max-w-4xl mx-auto reveal font-body">
-    <h2 class="text-3xl font-bold mb-12 text-center font-title text-[#7D9BB7]">Preguntas Frecuentes</h2>
-    <div class="space-y-4">
-        
-        <!-- PREGUNTA 1: PRIMERA SESIÓN -->
-        <details class="group bg-[#1e1e1e] border border-white/5 rounded-2xl p-6 transition-all transform hover:-translate-y-1 duration-300">
-            <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none">
-                ¿Qué incluye la primera sesión?
-                <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
-            </summary>
-            <p class="mt-4 text-gray-300 font-light leading-relaxed">
-                Realizamos una entrevista clínica inicial para conocer su motivo de consulta, se establece la Batería de pruebas para aplicar y un plan de trabajo personalizado.
-            </p>
-        </details>
-        
-        <!-- PREGUNTA 2: MODALIDAD -->
-        <details class="group bg-[#1e1e1e] border border-white/5 rounded-2xl p-6 transition-all transform hover:-translate-y-1 duration-300">
-            <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none">
-                ¿Atienden de forma presencial o virtual?
-                <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
-            </summary>
-            <p class="mt-4 text-gray-300 font-light leading-relaxed">
-                Contamos con consultorio físico en Monterrey y también ofrecemos sesiones en línea, según lo requiera el caso.
-            </p>
-        </details>
-        
-    </div>
-</section>
+            <h2 class="text-3xl font-bold mb-12 text-center font-title text-[#7D9BB7]">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                
+                <details class="group bg-[#1e1e1e] border border-white/5 rounded-2xl p-6 transition-all transform hover:-translate-y-1 duration-300">
+                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none">
+                        ¿Qué incluye la primera sesión?
+                        <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-300 font-light leading-relaxed">
+                        Realizamos una entrevista clínica inicial para conocer su motivo de consulta, se establece la Batería de pruebas para aplicar y un plan de trabajo personalizado.
+                    </p>
+                </details>
+                
+                <details class="group bg-[#1e1e1e] border border-white/5 rounded-2xl p-6 transition-all transform hover:-translate-y-1 duration-300">
+                    <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none">
+                        ¿Atienden de forma presencial o virtual?
+                        <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-300 font-light leading-relaxed">
+                        Contamos con consultorio físico en Monterrey y también ofrecemos sesiones en línea, según lo requiera el caso.
+                    </p>
+                </details>
+                
+            </div>
+        </section>
 
         <section id="contacto" class="py-32 px-4 md:px-6 bg-[#0f0f0f] text-white">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-        
-        <!-- COLUMNA 1: DATOS DE CONTACTO -->
-        <div class="reveal font-body lg:pr-4">
-            <h2 class="text-4xl font-bold mb-6 font-title text-[#7D9BB7]">Contacto</h2>
-            <p class="text-lg text-gray-400 mb-10 font-light leading-relaxed">Agenda tu sesión y comienza a priorizar tu bienestar.</p>
-            <div class="space-y-8 mb-12">
-                <div class="flex items-center gap-4">
-                    <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></div>
-                    <p class="text-gray-300 font-light">Monterrey, Nuevo León, México</p>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                
+                <div class="reveal font-body lg:pr-4">
+                    <h2 class="text-4xl font-bold mb-6 font-title text-[#7D9BB7]">Contacto</h2>
+                    <p class="text-lg text-gray-400 mb-10 font-light leading-relaxed">Agenda tu sesión y comienza a priorizar tu bienestar.</p>
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-center gap-4">
+                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></div>
+                            <p class="text-gray-300 font-light">Monterrey, Nuevo León, México</p>
+                        </div>
+                        <a href="https://www.instagram.com/syna.saludmental/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 text-gray-300 hover:text-[#F2BA05] transition-colors font-light">
+                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 4.8A5.2 5.2 0 1112 17.2 5.2 5.2 0 0112 6.8zm0 8.6A3.4 3.4 0 1012 8.6a3.4 3.4 0 000 6.8zm5.4-9.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></div>
+                            <span>@syna.saludmental</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-4 w-full">
+                        <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" class="btn-premium-gold text-center btn-hero-hover w-full shadow-md">Agendar por WhatsApp</a>
+                        <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" target="_blank" rel="noopener noreferrer" class="btn-premium-gold outline text-center btn-hero-hover w-full">¿Cómo llegar?</a>
+                    </div>
                 </div>
-                <a href="https://www.instagram.com/syna.saludmental/" target="_blank" class="flex items-center gap-4 text-gray-300 hover:text-[#F2BA05] transition-colors font-light">
-                    <div class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 4.8A5.2 5.2 0 1112 17.2 5.2 5.2 0 0112 6.8zm0 8.6A3.4 3.4 0 1012 8.6a3.4 3.4 0 000 6.8zm5.4-9.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></div>
-                    <span>@syna.saludmental</span>
-                </a>
-            </div>
-            <div class="flex flex-col gap-4 w-full">
-                <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="btn-premium-gold text-center btn-hero-hover w-full">Agendar por WhatsApp</a>
-                <a href="https://maps.app.goo.gl/T1CaaZqYPyCsU9hF9" target="_blank" class="btn-premium-gold outline text-center btn-hero-hover w-full">¿Cómo llegar?</a>
-            </div>
-        </div>
 
-        <!-- COLUMNA 2: EL CALENDARIO DE GOOGLE (REEMPLAZÓ AL FORMULARIO) -->
-        <div class="reveal bg-white/5 p-6 rounded-3xl border border-white/10 font-body backdrop-blur-sm w-full lg:col-span-1">
-            <h3 class="text-xl font-bold mb-2 font-title text-white">Reserva tu sesión</h3>
-            <p class="text-sm text-gray-400 mb-6 font-light">Selecciona el día y la hora de tu preferencia directamente en la agenda en vivo.</p>
-            
-            <div class="calendar-container relative w-full overflow-hidden rounded-2xl bg-white h-[500px]">
-                <!-- Recuerda poner aquí tu link definitivo de Google con el ?gv=true al final -->
-                <iframe 
-                    src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3o8XIbBlmwW0lZ7jN0EJRcn9AwM1ETQP0rxCmhAGEzvowopfwbfqlDpmxSdwYb-EmjsQawQmxX?gv=true" 
-                    style="border: 0" 
-                    width="100%" 
-                    height="100%" 
-                    frameborder="0"
-                    loading="lazy">
-                </iframe>
+                <div class="reveal bg-white/5 p-6 rounded-3xl border border-white/10 font-body backdrop-blur-sm w-full lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-2 font-title text-white">Reserva tu sesión</h3>
+                    <p class="text-sm text-gray-400 mb-6 font-light">Selecciona el día y la hora de tu preferencia directamente en la agenda en vivo.</p>
+                    
+                    <div class="calendar-container relative w-full overflow-hidden rounded-2xl bg-white h-[500px] shadow-2xl">
+                        <iframe 
+                            src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3o8XIbBlmwW0lZ7jN0EJRcn9AwM1ETQP0rxCmhAGEzvowopfwbfqlDpmxSdwYb-EmjsQawQmxX?gv=true" 
+                            style="border: 0" 
+                            width="100%" 
+                            height="100%" 
+                            frameborder="0"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="reveal map-container h-[450px] lg:h-full min-h-[500px] w-full shadow-2xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+                </div>
+
             </div>
-        </div>
-
-        <!-- COLUMNA 3: EL MAPA -->
-        <div class="reveal map-container h-[450px] lg:h-full min-h-[500px] w-full">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.719745169905!2d-100.298174524266!3d25.64742537742391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf00559ea967%3A0xd1aba3c231c291d!2sNeuropsicolog%C3%ADa%20%26%20Salud%20Mental!5e0!3m2!1ses-419!2smx!4v1777089199123!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
-        </div>
-
-    </div>
-</section>
-<!-- SECCIÓN DE PRUEBA: AGENDAR CITA (GOOGLE CALENDAR) -->
+        </section>
         
-
         <footer class="bg-[#7D9BB7] text-white py-16 text-center font-title">
             <img src="/Logos/2.png" alt="Syna Logo" class="h-16 w-auto mx-auto mb-8 opacity-80">
             <p class="text-[10px] opacity-60 font-body uppercase tracking-[0.3em]">© 2026 Syna Salud Mental y Neuropsicología.</p>
         </footer>
     </main>
 
-    <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/5218132438309?text=Hola!%20Me%20gustaría%20agendar%20una%20cita" class="whatsapp-btn shadow-2xl" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 32 32" width="32" height="32" fill="white"><path d="M16 .396C7.163.396 0 7.56 0 16.396c0 2.89.756 5.6 2.078 7.96L.26 31.604l7.417-1.94A15.944 15.944 0 0016 32c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.07a13.01 13.01 0 01-6.63-1.83l-.475-.282-4.4 1.15 1.17-4.29-.31-.44a13.01 13.01 0 01-2.02-6.98C3.335 9.07 9.07 3.335 16 3.335S28.665 9.07 28.665 16 22.93 29.466 16 29.466zm7.36-9.73c-.4-.2-2.36-1.17-2.72-1.3-.36-.13-.62-.2-.88.2s-1 1.3-1.22 1.56c-.22.26-.44.3-.84.1s-1.7-.62-3.23-1.98c-1.2-1.06-2-2.36-2.24-2.76-.23-.4-.02-.62.18-.82.18-.18.4-.46.6-.7.2-.24.26-.4.4-.66.13-.26.07-.48-.03-.68s-.88-2.12-1.2-2.9c-.32-.77-.64-.66-.88-.67h-.75c-.26 0-.68.1-1.04.48-.36.4-1.36 1.33-1.36 3.23s1.4 3.74 1.6 4c.2.26 2.76 4.22 6.7 5.92.94.4 1.67.64 2.24.82.94.3 1.8.26 2.48.16.76-.12 2.36-.96 2.7-1.9.34-.94.34-1.74.24-1.9-.1-.16-.36-.26-.76-.46z"/></svg>
     </a>
 </Layout>
@@ -234,6 +235,10 @@ import { Image } from 'astro:assets';
         background-size: cover;
     }
 
+    @media (max-width: 768px) {
+        .hero-parallax { background-attachment: scroll; }
+    }
+
     .reveal {
         opacity: 0;
         transform: translateY(30px);
@@ -241,6 +246,7 @@ import { Image } from 'astro:assets';
     }
     .reveal.active { opacity: 1; transform: translateY(0); }
 
+    .btn-hero-hover { transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .btn-hero-hover:hover {
         transform: translateY(-8px) scale(1.02);
         box-shadow: 0 20px 40px rgba(0,0,0,0.3);
@@ -250,34 +256,30 @@ import { Image } from 'astro:assets';
         background-color: #F2BA05;
         color: white;
         font-weight: 700;
-        padding: 1.1rem 2.2rem;
-        border-radius: 9999px;
-        transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        display: inline-block;
-        font-size: 0.9rem;
     }
 
     .btn-premium-white {
         background-color: rgba(255, 255, 255, 0.15);
         color: white;
         font-weight: 600;
-        padding: 1.1rem 2.2rem;
-        border-radius: 9999px;
-        transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .btn-premium-white:hover { background: white; color: #7D9BB7; }
 
     .btn-premium-gold.outline { background: transparent; border: 2px solid #F2BA05; color: #F2BA05; }
+    .btn-premium-gold.outline:hover { background: rgba(242, 186, 5, 0.1); }
 
-    .icon-circle { width: 48px; height: 48px; background: rgba(125, 155, 183, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #F2BA05; }
-    .contact-link { display: flex; align-items: center; gap: 15px; color: #9ca3af; transition: 0.3s; }
-    .contact-link:hover { color: #F2BA05; }
+    .icon-circle { width: 48px; height: 48px; background: rgba(125, 155, 183, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #F2BA05; flex-shrink: 0; }
 
-    .map-container { border-radius: 32px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
-    .service-card { background: white; padding: 3rem 2rem; border-radius: 2rem; transition: 0.4s; }
-    .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+    .map-container { border-radius: 32px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    
+    .service-card { 
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .service-card:hover { 
+        transform: translateY(-10px); 
+    }
 
     .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; background-color: #25D366; border-radius: 50%; display: flex; justify-content: center; align-items: center; z-index: 1000; transition: 0.3s; }
     .whatsapp-btn:hover { transform: scale(1.1); }
@@ -293,7 +295,6 @@ import { Image } from 'astro:assets';
         white-space: nowrap;
         width: auto;
         min-width: 160px;
-        transition: 0.3s;
     }
 
     @media (max-width: 400px) {
@@ -303,39 +304,9 @@ import { Image } from 'astro:assets';
         }
     }
 
-    /* ESTILOS DEL NUEVO FORMULARIO */
-    .form-input {
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 14px;
-        padding: 0.85rem 1.2rem;
-        color: white;
-        font-size: 0.95rem;
-        transition: all 0.3s ease;
-        outline: none;
-    }
-    .form-input:focus {
-        border-color: #F2BA05;
-        background-color: rgba(255, 255, 255, 0.08);
-        box-shadow: 0 0 0 3px rgba(242, 186, 5, 0.15);
-    }
-    .form-input::placeholder {
-        color: rgba(255, 255, 255, 0.3);
-    }
-
-    /* ESTILOS DE LA SECCIÓN DE PRUEBA DEL CALENDARIO */
     .calendar-container iframe {
         background-color: #ffffff;
-        width: 100%;
-        height: 100%;
     }
-
-    .calendar-container iframe {
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-}
 </style>
 
 <script is:inline>
@@ -356,6 +327,4 @@ import { Image } from 'astro:assets';
         }
         lastScroll = window.scrollY;
     });
-
-
 </script>
