@@ -130,36 +130,48 @@ import { Image } from 'astro:assets';
             </div>
         </section>
 
-        <section class="py-32 px-6 bg-[#1a1a1a]/30 backdrop-blur-sm">
+        <!-- SECCIÓN TESTIMONIOS (TONO ARENA SUAVE PREMIUM) -->
+        <section class="py-32 px-6 bg-[#FDF8EE]">
             <div class="max-w-5xl mx-auto text-center reveal">
                 <h2 class="text-3xl font-bold mb-16 font-title text-[#7D9BB7]">Lo que dicen nuestros pacientes</h2>
                 
                 <div class="grid md:grid-cols-2 gap-8 text-left font-body items-start">
                     
-                    <div class="p-8 bg-white/[0.04] backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
-                        <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
+                    <!-- TESTIMONIO 1 -->
+                    <div class="p-8 bg-white rounded-3xl border border-[#7D9BB7]/10 shadow-xl shadow-slate-200/40 transform hover:-translate-y-1 transition-all duration-300 cursor-default relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 text-7xl font-title text-[#7D9BB7]/5 select-none leading-none group-hover:text-[#F2BA05]/10 transition-colors duration-300">“</div>
+                        <p class="text-slate-600 italic mb-6 text-sm md:text-base leading-relaxed relative z-10">
                             "Nuestro proceso fue muy satisfactorio y completo, recibimos la atención que buscábamos para nuestro hijo. Mejoraron sus habilidades de comunicación y su concentración. Agradecemos el empeño que la psicóloga Sofía pone en cada una de las terapias, así como la calidez en el trato para con sus pacientes y familia, los reportes de diagnóstico fueron muy completos, enfocándose en las áreas que se necesitan trabajar con nuestro hijo."
                         </p>
-                        <p class="font-bold text-[#7D9BB7] tracking-wider">— B. R.</p>
+                        <p class="font-bold text-[#7D9BB7] tracking-wider text-sm border-t border-slate-100 pt-4 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-[#F2BA05]"></span> — B. R.
+                        </p>
                     </div>
                     
-                    <div class="p-8 bg-white/[0.04] backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-default">
-                        <p class="text-gray-300 italic mb-6 text-sm md:text-base leading-relaxed">
-                            "Muchas gracias por las citas que me ha dado. De un tiempo para acá me he dado cuenta de muchas cosas y he hecho cambios en mi forma de pensar and actuar y es gracias a usted, muchas gracias por la vocación y empeño que le pone a su trabajo."
+                    <!-- TESTIMONIO 2 -->
+                    <div class="p-8 bg-white rounded-3xl border border-[#7D9BB7]/10 shadow-xl shadow-slate-200/40 transform hover:-translate-y-1 transition-all duration-300 cursor-default relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 text-7xl font-title text-[#7D9BB7]/5 select-none leading-none group-hover:text-[#F2BA05]/10 transition-colors duration-300">“</div>
+                        <p class="text-slate-600 italic mb-6 text-sm md:text-base leading-relaxed relative z-10">
+                            "Muchas gracias por las citas que me ha dado. De un tiempo para acá me he dado cuenta de muchas cosas y he hecho cambios en mi forma de pensar y actuar y es gracias a usted, muchas gracias por la vocación y empeño que le pone a su trabajo."
                         </p>
-                        <p class="font-bold text-[#7D9BB7] tracking-wider">— J. O.</p>
+                        <p class="font-bold text-[#7D9BB7] tracking-wider text-sm border-t border-slate-100 pt-4 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-[#F2BA05]"></span> — J. O.
+                        </p>
                     </div>
                     
                 </div>
             </div>
         </section>
 
+        <!-- SECCIÓN PREGUNTAS FRECUENTES -->
         <section class="py-32 px-6 max-w-4xl mx-auto reveal font-body">
             <h2 class="text-3xl font-bold mb-12 text-center font-title text-[#7D9BB7]">Preguntas Frecuentes</h2>
-            <div class="space-y-5">
+            
+            <!-- Separación real entre cajitas individuales -->
+            <div class="space-y-6 max-w-3xl mx-auto">
                 
                 <!-- PREGUNTA 1 -->
-                <details class="group bg-white/[0.08] backdrop-blur-md border border-white/20 open:border-l-[#F2BA05] open:border-l-4 rounded-2xl p-6 shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
+                <details class="group bg-white/[0.08] backdrop-blur-md border border-white/20 open:border-l-[#F2BA05] open:border-l-4 rounded-2xl p-6 shadow-[0_15px_35px_rgba(0,0,0,0.2)] transition-all duration-300">
                     <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none text-base md:text-lg group-open:text-[#F2BA05] transition-colors">
                         ¿Qué incluye la primera sesión?
                         <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
@@ -170,7 +182,7 @@ import { Image } from 'astro:assets';
                 </details>
                 
                 <!-- PREGUNTA 2 -->
-                <details class="group bg-white/[0.08] backdrop-blur-md border border-white/20 open:border-l-[#F2BA05] open:border-l-4 rounded-2xl p-6 shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
+                <details class="group bg-white/[0.08] backdrop-blur-md border border-white/20 open:border-l-[#F2BA05] open:border-l-4 rounded-2xl p-6 shadow-[0_15px_35px_rgba(0,0,0,0.2)] transition-all duration-300">
                     <summary class="list-none font-bold cursor-pointer flex justify-between items-center text-white select-none text-base md:text-lg group-open:text-[#F2BA05] transition-colors">
                         ¿Atienden de forma presencial o virtual?
                         <span class="group-open:rotate-180 transition-transform text-[#F2BA05]">▼</span>
