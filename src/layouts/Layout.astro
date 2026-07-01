@@ -1,28 +1,31 @@
----
-import '../styles/global.css';
----
+    ---
+    import '../styles/global.css';
+    import Analytics from '@vercel/analytics/astro'
 
-<!doctype html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        
-        <!-- RUTA AJUSTADA PARA TU ARCHIVO PNG -->
-        <link rel="icon" type="image/png" href="/loguito-tab.png" />
+    ---
 
-        <meta name="generator" content={Astro.generator} />
-        <title>Syna - Salud Mental y Neuropsicología</title>
-        <meta name="description" content="Centro de Salud Mental y Neuropsicología para la evaluación y rehabilitación infantil, juvenil y adultos." />
-    </head>
-    <body class="m-0 w-full min-h-screen bg-[#F5E0B3]">
-        <slot />
-    </body>
-</html>
+    <!doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width" />
+            
+            <!-- RUTA AJUSTADA PARA TU ARCHIVO PNG -->
+            <link rel="icon" type="image/png" href="/loguito-tab.png" />
 
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-    }
-</style>
+            <meta name="generator" content={Astro.generator} />
+            <title>Syna - Salud Mental y Neuropsicología</title>
+            <meta name="description" content="Centro de Salud Mental y Neuropsicología para la evaluación y rehabilitación infantil, juvenil y adultos." />
+        </head>
+        <body class="m-0 w-full min-h-screen bg-[#F5E0B3]">
+            <slot />
+            <Analytics />
+        </body>
+    </html>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
